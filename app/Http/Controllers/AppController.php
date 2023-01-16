@@ -17,7 +17,8 @@ class AppController extends Controller
             ->setUserName($username)
             ->setPassword($password)
             ->includeTables(['columns', 'cards'])
-            ->dumpToFile($database_name . '.sql');
+            // dump inside public folder
+            ->dumpToFile('public/' . $database_name . '.sql');
 
         return response()->download($database_name . '.sql');
     }
