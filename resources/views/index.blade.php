@@ -6,7 +6,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
     <meta name="description" content="">
     <meta name="author" content="">
-    <title>Add Bootstrap 4 to Laravel 8</title>
+    <title>Bemo Kanban App</title>
     <link href="/css/kanban.css" rel="stylesheet" type="text/css" />
 
     <!-- Fontawesome -->
