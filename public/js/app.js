@@ -5386,7 +5386,7 @@ __webpack_require__.r(__webpack_exports__);
             title: 'Ok',
             handler: function handler() {
               _this.$modal.hide('dialog');
-              window.open(response.data.url, '_blank');
+              window.open(response.data.path, '_blank');
             }
           }]
         });

@@ -20,6 +20,10 @@ class AppController extends Controller
             ->includeTables(['columns', 'cards'])
             ->dumpToFile($path . '/' . $database_name . '.sql');
 
-        return response()->download($database_name . '.sql');
+        return response()->json([
+            'success' => true,
+            'message' => 'Database exported successfully',
+            'path' => config('app.url') . '/dumps/' . $database_name . '.sql'
+        ])
     }
 }

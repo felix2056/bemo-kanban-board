@@ -74,7 +74,8 @@ export default {
                             title: 'Ok',
                             handler: () => {
                                 this.$modal.hide('dialog')
-                                window.open(response.data.url, '_blank')
+                                window.open(response.data.path, '_blank')
+
                             }
                         }
                     ]
