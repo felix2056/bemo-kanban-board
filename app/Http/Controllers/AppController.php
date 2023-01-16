@@ -18,12 +18,12 @@ class AppController extends Controller
             ->setUserName($username)
             ->setPassword($password)
             ->includeTables(['columns', 'cards'])
-            ->dumpToFile($path . '/' . $database_name . '.sql');
+            ->dumpToFile($path . '/' . $database_name . time() . '.sql');
 
         return response()->json([
             'success' => true,
             'message' => 'Database exported successfully',
-            'path' => config('app.url') . '/dumps/' . $database_name . '.sql'
-        ])
+            'path' => config('app.url') . '/dumps/' . $database_name . time() . '.sql'
+        ]);
     }
 }
