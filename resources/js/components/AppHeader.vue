@@ -73,7 +73,8 @@ export default {
                         {
                             title: 'Ok',
                             handler: () => {
-                                window.location.href = '/api/download-db'
+                                this.$modal.hide('dialog')
+                                window.open(response.data.url, '_blank')
                             }
                         }
                     ]

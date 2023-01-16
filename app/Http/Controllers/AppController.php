@@ -11,7 +11,7 @@ class AppController extends Controller
         $database_name = env('DB_DATABASE');
         $username = env('DB_USERNAME');
         $password = env('DB_PASSWORD');
-        $path = storage_path();
+        $path = public_path() . '/dumps';
 
         \Spatie\DbDumper\Databases\MySql::create()
             ->setDbName($database_name)

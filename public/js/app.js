@@ -5385,7 +5385,8 @@ __webpack_require__.r(__webpack_exports__);
           buttons: [{
             title: 'Ok',
             handler: function handler() {
-              window.location.href = '/api/download-db';
+              _this.$modal.hide('dialog');
+              window.open(response.data.url, '_blank');
             }
           }]
         });
